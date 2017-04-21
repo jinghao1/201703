@@ -19,7 +19,7 @@ $str = $aes->encrypt($arrstr);//加密
 if(!isMobile()){ //pc端
 	//echo "pc";
 	
-	include("./bwopc.html");
+	include("./bwo_pc.html");
 	echo '<input type="hidden" name="fromwh" value="2" />';
 }else{ //mobile 
 	//echo 'mobile';
@@ -30,6 +30,6 @@ if(!isMobile()){ //pc端
 }
 echo '<input type="hidden" name="encrystr" value="'.$str.'" />';
  
-echo ' <script type="text/javascript" src="../../medias/public/javascript/skin/js/jweixin-1.0.0.js"></script>
+echo ' <script type="text/javascript" src="/medias/public/javascript/skin/js/jweixin-1.0.0.js"></script>
 ';
 ?>
