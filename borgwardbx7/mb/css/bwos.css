@@ -14,7 +14,7 @@ input:-ms-input-placeholder{
         font-size:12px;        
 }
 
-.content{position:relative;background: url(../images/bigBg.jpg) no-repeat;height:93.8rem; background-size:100%;}
+.content{position:relative;background: url(../images/bigBg.jpg) no-repeat;height:92.7rem; background-size:100%;}
 .cont01{float:left;margin-top:4.625rem;font-size:0.65rem;width:14.0rem;margin-left:1.0rem;}
 .cont01 a{text-decoration: underline;color:#000;}
 .cont01 h2{float:right;margin-top:6.6rem;font-size:12px;color:#fff;}
@@ -24,8 +24,8 @@ input:-ms-input-placeholder{
 .cont01 .ewm dl dd img{width:2.15rem;margin-top:0.25rem;}
 
 .cont02{position:absolute;top:16.0rem;}
-.cont02 .vid-box{width:14.0rem;height:7.9rem;float:left;}
-.cont02 .vid-box video{width:14.0rem;height:7.9rem;margin-left:1.0rem;}
+.cont02 .vid-box{width:14.0rem;height:7.9rem;float:left;margin-left:1rem;}
+.cont02 .vid-box video{width:14.0rem;height:7.9rem;}
 
 .cont03{position: absolute;top:27.08rem;width:14.0rem;margin-left:1.0rem;}
 .cont03 ul{}
@@ -55,7 +55,7 @@ input:-ms-input-placeholder{
 .swiper-containers .swiper-button-next{background-image: url(../images/right.png);width:1.375rem;height:3.65rem;background-size:1.375rem 3.65rem;right:-1px;margin-top:-1.9rem;}
 
 
-.cont06{position: absolute;top:66.45rem;width:14.0rem;margin-left:1.0rem;}
+.cont06{position: absolute;top:65rem;width:14.0rem;margin-left:1.0rem;}
 .cont06 a{display: inline-block;height:7.75rem;width:100%;}
 
 .cont07{position: absolute;top:75rem;width:14.0rem;margin-left:1.0rem;}
