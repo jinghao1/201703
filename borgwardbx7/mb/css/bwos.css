@@ -21,7 +21,8 @@ input:-ms-input-placeholder{
 .cont01 .ewm{float:right;margin-top:7rem;;position: absolute;right:1.0rem}
 .cont01 .ewm dl{float:left; text-align: center; margin-left:0.25rem;}
 .cont01 .ewm dl dt img{width:2.325rem;height:2.325rem;}
-.cont01 .ewm dl dd img{width:2.15rem;margin-top:0.25rem;}
+.cont01 .ewm dl:first-child dd img{width:2.1rem;margin-top:0.25rem;margin-left:0.05rem;}
+.cont01 .ewm dl:last-child dd img{width:1.825rem;margin-top:0.25rem; margin-left:0.3rem;}
 
 .cont02{position:absolute;top:16.0rem;}
 .cont02 .vid-box{width:14.0rem;height:7.9rem;float:left;margin-left:1rem;}
