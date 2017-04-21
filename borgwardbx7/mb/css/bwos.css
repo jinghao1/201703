@@ -16,7 +16,7 @@ input:-ms-input-placeholder{
 
 .content{position:relative;background: url(../images/bigBg.jpg) no-repeat;height:93.8rem; background-size:100%;}
 .cont01{float:left;margin-top:4.625rem;font-size:0.65rem;width:14.0rem;margin-left:1.0rem;}
-.cont01 a{text-decoration: underline;}
+.cont01 a{text-decoration: underline;color:#000;}
 .cont01 h2{float:right;margin-top:6.6rem;font-size:12px;color:#fff;}
 .cont01 .ewm{float:right;margin-top:7rem;;position: absolute;right:1.0rem}
 .cont01 .ewm dl{float:left; text-align: center; margin-left:0.25rem;}
@@ -37,11 +37,11 @@ input:-ms-input-placeholder{
 .cont03 li span select{padding-left:0.25rem;font-size:12px;height:1rem;width:100%;color:#fff; line-height:1rem;background: none}
 .cont03 p{font-size:12px;color:#cac6c5;padding-left:0.25rem;}
 .cont03 p i{color:#f00}
-.btns{float:left;width:13.25rem;margin-top:0.35rem;font-size:0.75rem;line-height:1.125rem;height:1.125rem;margin-left:0.375rem; background: #ba0714; text-align: center;color:#fff;}
-.cont04{position: absolute;top:54.15rem;width:14.0rem;margin-left:1.0rem;}
+.btns{float:left;width:13.25rem;margin-top:1.25rem;font-size:0.75rem;line-height:1.125rem;height:1.125rem;margin-left:0.375rem; background: #ba0714; text-align: center;color:#fff;}
+.cont04{position: absolute;top:53rem;width:14.0rem;margin-left:1.0rem;}
 .cont04 a{height:1.0rem;display: inline-block;margin-left:4.77rem;width:4.0rem;}
 
-.cont05{position: absolute;top:57.6rem;width:90%;margin-left:5%;}
+.cont05{position: absolute;top:56.6rem;width:90%;margin-left:5%;}
 .swiper-containers{width:100%;margin-left:auto;margin-right:0;margin-top:0.6rem;overflow:hidden;z-index:1;position:relative;}
 /*swiper*/
 .swiper-containers{width:100%;margin-left:auto;margin-right:0;margin-top:0.6rem;overflow:hidden;z-index:1;position:relative;}
@@ -52,14 +52,15 @@ input:-ms-input-placeholder{
 .swiper-pagination .swiper-pagination-bullet{background: #7a7c7b;width:5px;height:5px;text-align:center;margin:0 5px;}
 .swiper-pagination .swiper-pagination-bullet-active{background: #fff;}
 .swiper-containers .swiper-button-prev{background-image: url(../images/left.png);width:1.375rem;height:3.65rem;background-size:1.375rem 3.65rem;left:-1px;margin-top:-1.9rem;}
-.swiper-containers .swiper-button-next{background-image: url(../images/right.png);width:1.375rem;height:3.65rem;background-size:1.375rem 3.65rem;right:-2px;margin-top:-1.9rem;}
+.swiper-containers .swiper-button-next{background-image: url(../images/right.png);width:1.375rem;height:3.65rem;background-size:1.375rem 3.65rem;right:-1px;margin-top:-1.9rem;}
 
 
 .cont06{position: absolute;top:66.45rem;width:14.0rem;margin-left:1.0rem;}
 .cont06 a{display: inline-block;height:7.75rem;width:100%;}
 
-.cont07{position: absolute;top:76.5rem;width:14.0rem;margin-left:1.0rem;}
+.cont07{position: absolute;top:75rem;width:14.0rem;margin-left:1.0rem;}
 .cont07 li{width:6.95rem;float:left;height:6.95rem;}
+.cont07 li a{width:6.95rem;float:left;height:6.95rem;}
 /*.bwo{position:relative;background: url(../images/bg.jpg) no-repeat;height:76.85rem; background-size:100%;}
 .jr{position: absolute;selecttop:10.35rem; right:1.0rem;}
 .jr a{font-size:12px; text-decoration: underline;color:#c30f0f;}
