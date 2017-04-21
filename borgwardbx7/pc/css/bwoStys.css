@@ -1,0 +1,134 @@
+/* 公共样式 */
+html,body { height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td {margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;margin:0;}
+ol,ul {list-style:none;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+caption,th {text-align:left;}
+q:before,q:after {content:'';}
+body{font-family:'Microsoft YaHei';font-size:12px;_height:100%;}
+.f14{ font-size:14px;}
+.bold{ font-weight:bold;}
+input{border:none; outline: none}
+input:not([type="checkbox"]), select, textarea { /*outline: none; border: none; -webkit-appearance: none; */}
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+ /* border: solid 1px #000;*/
+outline: none; border: none; 
+  /*将默认的select选择框样式清除*/
+ /* appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;*/
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+ /* background: url("arrow.png") no-repeat right center;
+  padding-right: 14px;*/
+  -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background:transparent;
+    border:none;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+input {
+    background:no-repeat 0 0 scroll ＃EEEEEE;
+    border:none;
+    outline:medium; /* 在浏览器下面，点击input输入时，会有边框，只要在样式中应用：outline:medium;即可去掉边框。 */ 
+    padding:0; /*input默认有上下padding*/
+}
+/*清浮动*/
+.clearfix:after {visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0;}
+.clearfix{*zoom:1;}
+.clear{clear:both;}
+
+a:visited, a:link {color:#c1c1c1; text-decoration:none;}
+a:hover {color:#FFF; text-decoration:underline;cursor: pointer}
+input::-webkit-input-placeholder{
+        color: #fff;
+}
+input::-moz-placeholder{ 
+        color: #fff;        
+}
+input:-ms-input-placeholder{ 
+        color: #fff;        
+}
+
+/*.container{background:url(../images/bwBg.jpg) no-repeat center top;}*/
+/*.content{width:1000px;padding-top:521px;margin:0 auto; overflow: hidden;}*/
+.bg01{float:left;background:url(../images/bg01.jpg) no-repeat center top;width:100%;height:643px; position: relative;}
+.bg01_cont{width:928px;margin:0 auto;margin-top:240px;overflow:hidden;}
+.b_cont{width:95px;float:right;}
+.b_cont a{float:right;font-size:16px;color:#fff;width:95px; text-align: right;margin-bottom:20px;}
+.b_cont dl{float:right;width:95px; text-align: center;display: block;}
+.b_cont dl dt{color:#fff;line-height:30px;}
+.bg01_cont p{float: right;margin-top:290px;margin-right:-90px;font-size:16px;color: #fff}
+
+.bg02{float:left;background:url(../images/bg02.jpg) no-repeat center top;width:100%;height:629px; position: relative;}
+.bg02_cont{width:928px;margin:0 auto;margin-top:53px;overflow:hidden;}
+.bg02_video{width:556px;height:320px;float:left;}
+.bg02_login{margin-left:66px;float:left;width:306px;margin-top:13px;}
+.bg02_login li{float:left;margin-left:40px;height:39px;margin-bottom:12px;}
+.bg02_login li input{height:39px;line-height:39px;padding-left:12px;width:250px; background:none;color:#fff;}
+.bg02_login li.xzs span{padding-left:12px;color:#fff;float:left;width:40px;}
+.bg02_login li.xzs span input{width:12px;height:12px;margin-top:14px;float:left;}
+.bg02_login li.xzs span i{font-style: normal;float:left;line-height:39px;margin-left:4px;}
+.bg02_login li select{height:39px;line-height:39px;padding-left:12px;width:263px; background:none;color:#fff;background: url("../images/arrow.png") no-repeat 245px center;background-size:10px 10px;}
+.bg02_login li select option{color:#000;}
+.bg02_login li select.pro{height:39px;line-height:39px;padding-left:12px;width:127px;color:#fff;background: url("../images/arrow.png") no-repeat 108px center;background-size:10px 10px;}
+.bg02_login li select.city{height:39px;line-height:39px;padding-left:12px;width:134px;color:#fff;background: url("../images/arrow.png") no-repeat 115px center;background-size:10px 10px;}
+.bg02_login p{float:left;color:#88817e;font-size:12px;}
+.bg02_login p a{color:#f00;}
+.bg02_login .btns{width:305px;line-height:45px; margin-top:24px;float:left;background: #ba0714;color:#fff;font-size:22px; text-align: center;font-weight:normal;cursor: pointer;}
+.bg02_login .btns:hover{background:#a0000d;}
+
+.bg03{float:left;background:url(../images/bg03.jpg) no-repeat center top;width:100%;height:546px; }
+.bg03_cont{width: 928px;margin:0 auto; overflow: hidden;height:30px;height:458px;margin-top:20px;}
+.lines{background:url(../images/line.png) no-repeat center top;width:901px;height:5px;float:left;margin-top:266px;margin-left:25px;}
+.lines li{float:left;position:relative;}
+
+.lines li.one a{float:left;margin-top:-7px;margin-left:52px;background:url(../images/h01.png) no-repeat; width:17px;height:17px;}
+.lines li.one span{float:left;cursor:pointer;text-align:center;color:#fff;padding:2px 0;margin-left:-58px;margin-top:-52px;font-size:12px;border-radius: 6px;background: #948d8a; width:100px;height:34px;}
+.lines li b img{width:100px;height:126px;display: none}
+
+.lines li.three a,.lines li.five a,.lines li.seven a{float:left;margin-top:-7px;margin-left:55px;background:url(../images/h01.png) no-repeat; width:17px;height:17px;}
+.lines li.three span,.lines li.five span,.lines li.seven span{float:left;cursor:pointer;text-align:center;color:#fff;padding-top:3px;margin-left:-58px;margin-top:-52px;font-size:12px;border-radius: 6px;background: #948d8a; width:100px;height:34px;}
+
+
+.lines li.two a,.lines li.four a,.lines li.six a,.lines li.six a{float:left;margin-top:-7px;margin-left:55px;background:url(../images/h01.png) no-repeat; width:17px;height:17px;}
+.lines li.two span,.lines li.four span,.lines li.six span,.lines li.six span{float:left;cursor:pointer;text-align:center;color:#fff;padding-top:3px;margin-left:-58px;margin-top:16px;font-size:12px;border-radius: 6px;background: #948d8a; width:100px;height:34px;}
+.lines li.two b,.lines li.four b,.lines li.six b{position:absolute;margin-left:-100px;margin-top:-135px;}
+.lines li.one b,.lines li.three b,.lines li.five b,.lines li.seven b{position:absolute;float:left;margin-left:-58px;margin-top:15px;}
+
+.lines li.on a{background:url(../images/h02.png) no-repeat; }
+.lines li.on span{background: #ba0714; }
+.lines li.on img{display: block;}
+
+.boxss{margin-top:403px;width:140px;height:28px;margin-left:521px; cursor: pointer;}
+.boxss a{display: inline-block;}
+
+.bg04{float:left;background:url(../images/bg04.jpg) no-repeat center top;width:100%;height:472px; position: relative;}
+.bg04_cont{width:928px;height:396px;margin:0 auto;overflow: hidden;margin-top:54px;}
+.slideBoxs{ width:928px; height:396px; overflow:hidden; position:relative;  }
+.slideBoxs .prev,
+.slideBoxs .next{filter:alpha(opacity=80);opacity:0.8; width:50px;height:90px;display: block;background: #000}
+.slideBoxs .prev{position: absolute;top:161px;left:0px;}
+.slideBoxs .next{position: absolute;top:161px;right:0px;}
+.slideBoxs .prev:hover,
+.slideBoxs .next:hover{ filter:alpha(opacity=50);opacity:0.5;  }
+.slideBoxs .bds img{height:396px;}
+.slideBoxs .prev img,
+.slideBoxs .next img{margin-top:9px;margin-left:6px;}
+
+.bg05{float:left;background:url(../images/bg05.jpg) no-repeat center top;width:100%;height:485px; position: relative;}
+.bg05_cont{width:928px;height:400px;margin:0 auto;overflow: hidden;margin-top:50px;}
+
+.bg06{float:left;background:url(../images/bg06.jpg) no-repeat center top;width:100%;height:522px; position: relative;}
+.uls{width:928px;margin:0 auto;overflow: hidden;height:220px;margin-top:74px;}
+.uls li{width:218px;height:220px;float:left;margin-left:10px; cursor: pointer}
