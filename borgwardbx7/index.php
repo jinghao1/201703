@@ -24,7 +24,7 @@ if(!isMobile()){ //pc端
 }else{ //mobile 
 	//echo 'mobile';
 	
-	include("./bwo.html");
+	include("./bwo_wap.html");
 	echo '<input type="hidden" name="fromwh" value="1" />';
 	//include("../userreg/reg.html");
 }
