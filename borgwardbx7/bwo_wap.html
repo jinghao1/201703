@@ -114,6 +114,7 @@
 </div>
 
 <script>
+	 var ymurl = "https://xy.qichedaquan.com";  
 $(document).ready(function(){  
     var swiper = new Swiper('.swiper-containers', {
         loop: true,
@@ -128,7 +129,7 @@ $(document).ready(function(){
         prevButton: '.swiper-button-prev'
     });
     //end by song
-    var ymurl = "https://xy.qichedaquan.com";  
+   
     $.getJSON(ymurl+"/medias/public/index.php/port/Bwuserbx7/Ltbuycartime", {buycartime:1}, function(end){ //循环输出，并追加到购买时间
         //console.log(end);
         $.each(end,function(id,val){ 
@@ -137,7 +138,7 @@ $(document).ready(function(){
         });
          
     });
-});
+ 
 
     
     $(".btns").click(function(){
@@ -245,10 +246,10 @@ $(document).ready(function(){
             return alert(msg.message);
         }
         
-        var title ='宝沃BX5撼世登场'; // 分享标题
-        var link =ymurl+'/201703/borgwardbx5';
-        var desc = '宝沃BX5全新上市'; // 分享描述
-        var imgUrl = ymurl+'/201703/borgwardbx5/images/sharewx.jpg'; 
+        var title ='晒照与BX7一起游德国'; // 分享标题
+        var link =ymurl+'/201704/borgwardbx7';
+        var desc = '宝沃BX7邀您共赴魅力德国之旅 '; // 分享描述
+        var imgUrl = ymurl+'/201704/borgwardbx7/images/baowshar7.jpg'; 
         var wx_appId = msg.appId; 
         var wx_timestamp = msg.timestamp;
         var wx_nonceStr = msg.nonceStr;
