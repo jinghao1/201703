@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type">
@@ -47,32 +47,32 @@
         <ul>
             <li><input name="name" type="text" placeholder="请填写姓名"></li>
             <li>
-                <select>
-                    <option name="sexId" value="2">女</option>
-                    <option name="sexId" value="1" checked>男</option>
+                <select id="sexId">
+                    <option  value="2">女</option>
+                    <option   value="1" selected>男</option>
                 </select>
             </li>
             <li><input type="text" name="phone" type="text" placeholder="请填写手机"></li>
             <li>
                 <span>
                     <select id="province" name="provinceId">
-                        <option>请选择省份</option>
+                        <option  value="0">请选择省份</option>
                     </select>
                 </span>
                 <span>
                     <select id="city" name="cityId">
-                        <option>请选择城市</option>
+                        <option value="0">请选择城市</option>
                     </select>
                 </span>
             </li>
             <li style="margin-top:-0.1rem">
                 <select id="dealer" name='dealer'>
-                    <option>请选择经销商</option>
+                    <option  value="0">请选择经销商</option>
                 </select>
             </li>
             <li>
                 <select id="buycartime" name="bytime">
-                    <option>请选择时间</option>
+                    <option value="0">请选择时间</option>
                 </select>
             </li>
         </ul>
@@ -114,6 +114,7 @@
 </div>
 
 <script>
+$(document).ready(function(){  
     var swiper = new Swiper('.swiper-containers', {
         loop: true,
         pagination: '.swiper-pagination',
@@ -136,13 +137,15 @@
         });
          
     });
+});
+
     
     $(".btns").click(function(){
         //名字不为空
         var name = $("input[name='name']").val();
         if(name == "" || name == "姓名" ){
             alert("请输入姓名");
-            $("input[name='name']").focus();
+            //$("input[name='name']").focus();
             return false;
         }
         if (!name.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
@@ -150,7 +153,7 @@
             return false;
         }
         //性别，必选
-        var sex = $("input[name='sexId']:checked").val();
+        var sex = $("#sexId").val() ;
       
         //手机号验证
         var phone = $("input[name='phone']").val();
