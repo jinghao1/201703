@@ -25,9 +25,9 @@ input:-ms-input-placeholder{
 .cont01 .ewm dl:first-child dd img{width:2.075rem;margin-bottom:0.165rem;margin-left:0.12rem;}
 .cont01 .ewm dl:last-child dd img{width:1.775rem;margin-bottom:0.15rem; margin-left:0.3rem;}
 
-.cont02{position:absolute;top:16.0rem;}
-.cont02 .vid-box{width:14.0rem;height:7.9rem;float:left;margin-left:1rem;}
-.cont02 .vid-box video{width:14.0rem;height:7.9rem;}
+.cont02{position:absolute;top:17.0rem;}
+.cont02 .vid-box{width:14.0rem;height:6.8rem;float:left;margin-left:1rem;}
+.cont02 .vid-box video{width:14.0rem;height:6.8rem;}
 
 .cont03{position: absolute;top:27.62rem;width:14.0rem;margin-left:1.0rem;}
 .cont03 ul{}
