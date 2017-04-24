@@ -369,6 +369,30 @@ $(document).ready(function(){
 	  var s = document.getElementsByTagName("script")[0]; 
 	  s.parentNode.insertBefore(hm, s);
 	})();
+
+	
+function getAppShareInfo(platform){
+ 
+        var title ='晒照与BX7免费游德国'; // 分享标题
+        var link =ymurl+'/201704/borgwardbx7';
+        var desc = '宝沃BX7邀您共赴魅力德国之旅 '; // 分享描述
+        var imgUrl = ymurl+'/201704/borgwardbx7/mb/images/baowshar7.jpg'; 
+        
+        var data = {
+                title: title,
+                desc: desc,
+                link: link,
+                showShare: 1,
+                imgurl: imgUrl,
+                width:200,
+            height:200
+            };
+            if(platform == 1){
+              window.xyCar.getAppShareInfo(JSON.stringify(data));
+            }else{
+          return data;
+        }
+    }
 </script>
 </body>
 </html>
