@@ -16,10 +16,10 @@ input:-ms-input-placeholder{
 
 .content{position:relative;background: url(../images/bigBg.jpg) no-repeat;height:92.7rem; background-size:100%;}
 .cont01{float:left;margin-top:4.625rem;font-size:0.65rem;width:14.0rem;margin-left:1.0rem;}
-.cont01 a{text-decoration: underline;color:#000;}
-.cont01 h2{float:left;width:5.5rem;height:0.75rem;margin-top:9rem;font-size:12px;}
-.cont01 h2 a{display:block;height:0.75rem;}
-.cont01 .ewm{float:right;margin-top:7rem;;position: absolute;right:1.0rem}
+.cont01 a{text-decoration: underline;color:#000;float:left;}
+.cont01 h2{position:absolute;width:5.5rem;height:0.75rem;margin-top:9rem;font-size:12px;}
+.cont01 h2 a{display:block;height:0.75rem;width:5.5rem;}
+.cont01 .ewm{float:right;margin-top:8rem;;position: absolute;right:1.0rem}
 .cont01 .ewm dl{float:left; text-align: center; margin-left:0.25rem;}
 .cont01 .ewm dl dt img{width:2.325rem;height:2.325rem;}
 .cont01 .ewm dl:first-child dd img{width:2.075rem;margin-bottom:0.165rem;margin-left:0.12rem;}
