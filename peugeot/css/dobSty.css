@@ -1,0 +1,189 @@
+/* 公共样式 */
+html,body { height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td {margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;margin:0;}
+ol,ul {list-style:none;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;} 
+caption,th {text-align:left;}
+q:before,q:after {content:'';}
+body{font-family:'Microsoft YaHei';font-size:12px;_height:100%;}
+.f14{ font-size:14px;}
+.bold{ font-weight:bold;}
+input{border:none; outline: none}
+input:not([type="checkbox"]), select, textarea { /*outline: none; border: none; -webkit-appearance: none; */}
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+ /* border: solid 1px #000;*/
+outline: none; border: none; 
+  /*将默认的select选择框样式清除*/
+ /* appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;*/
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+ /* background: url("arrow.png") no-repeat right center;
+  padding-right: 14px;*/
+  -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background:transparent;
+    border:none;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+input {
+   /* background:no-repeat 0 0 scroll ＃EEEEEE;*/
+    border:none;
+    outline:medium; /* 在浏览器下面，点击input输入时，会有边框，只要在样式中应用：outline:medium;即可去掉边框。 */ 
+    padding:0; /*input默认有上下padding*/
+    background:none;
+}
+/*清浮动*/
+.clearfix:after {visibility:hidden; display:block; font-size:0; content:""; clear:both; height:0;}
+.clearfix{*zoom:1;}
+
+a:visited, a:link {color:#c1c1c1; text-decoration:none;}
+a:hover {color:#FFF; text-decoration:underline;}
+
+.box{/*background:url(../images/bg01.jpg) no-repeat center top;*/float:left}
+.boxCont{float:left;width:100%;}
+.boxOne{background:url(../images/bg01.1.jpg) no-repeat center top;height:462px;width:100%;float:left;}
+.boxTwo{background:url(../images/bg01.2.jpg) no-repeat center top;height:292px;width:100%;float:left;}
+.boxThree{background:url(../images/bg01.3.jpg) no-repeat center top;height:605px;width:100%;float:left;}
+.box01{width:1000px;overflow: hidden;margin:0 auto;position:relative;height:633px;}
+.box02{position:relative;background:url(../images/bg02.jpg) no-repeat center top; height:624px;width:100%;float:left;}
+.box03{background:url(../images/bg03.jpg) no-repeat center top; height:1540px;width:100%;float:left;}
+.box04{background:url(../images/bg04.jpg) no-repeat center top; height:582px;width:100%;float:left;}
+.box05{background:url(../images/bg05.jpg) no-repeat center top; height:717px;width:100%;float:left;}
+.tk01{position: absolute;top:50px;right:427px;width:155px;height:20px;cursor: pointer}
+/*.dB{width:1000px;margin:0 auto;height:500px;padding-top:140px;}*/
+
+/*活动报名*/
+.logins{position:absolute;right:0;top:147px;width:331px; }
+.logins ul{float:left;}
+.logins li{float:left;margin-left:94px; margin-bottom:21px;height:35px;}
+.logins li input.name{font-size:12px;width:227px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins li select.sex{font-size:12px;margin-left:58px;background: url("../images/arrow02.png") no-repeat 94px center;width:102px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins li select.province{font-size:12px;background: url("../images/arrow02.png") no-repeat 63px center;width:82px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins li select.city{font-size:12px;margin-left:-21px;background: url("../images/arrow02.png") no-repeat 63px center;width:82px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins li input.phone{font-size:12px;color:#8c949a;width:227px;height:35px;line-height: 35px;padding-left:10px;}
+.logins li select.dealer{font-size:12px;background: url("../images/arrow02.png") no-repeat 218px center;width:237px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins li select.carType{font-size:12px;background: url("../images/arrow02.png") no-repeat 218px center;width:237px;height:35px;line-height:35px;color:#8c949a;padding-left:10px;}
+.logins p{color:#8c949a;}
+.logins .btn{width:330px;cursor:pointer;line-height:50px; text-align:center;background: #017bde;font-size:22px;color:#fff;margin-top:30px;}
+.logins .btn:hover{background:#0062c5;}
+.state{position:absolute;bottom:80px;left:27px;}
+.state h2{height:36px;float:left;/*margin-right:15px;*/cursor: pointer }
+.state h2.btns{background: url("../images/btn01.png") no-repeat;background-size:204px 36px;width:204px;height:36px;}
+.state h2.btnss{background: url("../images/btn02.png") no-repeat;background-size:204px 36px;width:204px;height:36px;}
+.state h2.btnss:hover{background: url("../images/btn03.png") no-repeat;background-size:204px 36px;width:204px;height:36px;}
+
+.img4008{width:1000px;margin:0 auto;overflow: hidden;}
+ /* 本例子css */
+.slideBoxs{ width:1000px; height:420px;margin-top:110px; overflow:hidden; position:relative;  }
+.slideBoxss{margin-top:65px;}
+.slideBoxsss{margin-top:60px;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.slideBox .hd ul li{ float:left; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+/*.slideBox .hd span.on{color:#f00;}*/
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd li p{padding-left:20px;color:#fff;font-size:14px; position:absolute;bottom:13px;height:60px;opacity: 0.8;background:#000;width:980px;}
+.slideBox .bd li p font{font-size:14px;float:left;width:900px;margin-top:5px;}
+.slideBox .bd li p b{float:left;width:900px;font-weight:normal;font-size:12px;}
+.slideBox .bd li p span{float:right;margin-right:20px;}
+.slideBox .bd img{ width:1000px; height:420px; display:block;  }
+
+.carImgs{width:1000px;margin:0 auto;height:430px;overflow: hidden;padding-top:100px;}
+.carImgs p{margin-left:255px;}
+.carImgs p span{cursor:pointer;float:left;margin:0 15px; text-align:center; border:1px solid #017bde;color:#017bde;font-weight:bold;font-size:20px;width:140px;height:35px;line-height:35px;font-style:oblique}
+.carImgs p span.cur{background:#ff8a00;color:#fff;border:none;height:37px;width:142px;line-height:37px;}
+.carImgs p span.cur b{}
+.jmCars{margin-top:15px;}
+/*弹框样式*/
+.bgs{display: none}
+.bgs_s{display: none}
+.bgs_ss{display: none}
+.bgss{z-index:999;position:absolute;top:0;left:0;width:100%;height:100%; background: #000; filter:alpha(opacity=50); -moz-opacity:0.5;-khtml-opacity: 0.5;  opacity: 0.5;  }
+.scl{position:absolute;top:620px;width:1000px;height:525px;left:50%;margin-left:-500px;z-index:9999;}
+.scl .close{background:#f00;filter:alpha(opacity=0); -moz-opacity:0;-khtml-opacity: 0;  opacity: 0;position:absolute;width:42px;height:42px;top:25px;right:25px; cursor:pointer;}
+.sm{background:url(../images/sm.jpg) no-repeat;width:860px;height:430px;position:absolute;top:900px;left:50%;margin-left:-430px;z-index:9999;}
+.sm .close{position:absolute;width:32px;height:32px;top:10px;right:10px;cursor: pointer}
+.sm .tkCont{width:800px;height:300px;overflow:auto;float:left;margin-left:50px;margin-top:75px;}
+.sm .tkCont h2{color:#017bde;font-size:14px;}
+.sm .tkCont p{color:#999;line-height:22px;}
+.sm .tkCont .conts{margin-top:10px;}
+.zj{background:url(../images/zj.jpg) no-repeat;width:440px;height:180px;position:absolute;top:900px;left:50%;margin-left:-220px;z-index:9999;}
+.zj p{ text-align:center;margin-top:60px;color:#ff8a00;font-size:22px; }
+.zj p b{font-size:33px;font-weight: bold;}
+.zj p font{font-weight: bold;}
+.zj h4{ text-align:center;margin-top:60px;font-weight:normal;color:#999999;font-size:22px; }
+.zj h4 b{font-size:33px;font-weight: bold;}
+.zj .close{position:absolute;width:32px;height:32px;top:10px;right:10px;cursor: pointer}
+
+
+
+#featured-area{height:366px;width:1000px;margin:15px auto 0 auto; position:relative;}
+.roundabout-holder{list-style:none;width:632px;height:366px;margin:0px auto;}
+.roundabout-moveable-item{font-size:12px!important;height:366px;width:632px;cursor:pointer;/*padding:5px;border:1px solid #aaaaaa;-webkit-border-radius:5px;-moz-border-radius:5px;background:#f9f9f9;*/}
+.roundabout-moveable-item img{height:100%;width:100%;background-color:#FFFFFF;margin:0;}
+.roundabout-in-focus{cursor:auto;}
+
+.roundabout-holder span{display:none;}
+.roundabout-in-focus:hover span{display:inline;position:absolute;bottom:5px;right:5px;padding:8px 20px;background:#f9f9f9;color:#3366cc;z-index:999;-webkit-border-top-left-radius:5px;-moz-border-radius-topLeft:5px;border-left:1px solid #aaaaaa;border-top:1px solid #aaaaaa;}
+.roundabout a:active, .roundabout a:focus, .roundabout a:visited{outline:none;text-decoration:none;}
+.roundabout li{margin:0}
+
+.jmCars{height:390px;overflow: hidden;width:1000px;float:left;}
+
+.video{width:1000px;height:325px;margin:0 auto;overflow: hidden;position:relative;}
+.video ul{z-index:999;position: absolute;top:110px;left:130px;width:114px;}
+.video ul li{cursor:pointer;float:left;margin:5px 0px; text-align:center; border:1px solid #017bde;color:#017bde;font-weight:bold;font-size:20px;width:114px;line-height:30px;font-style:oblique}
+.video ul li.on{background:#ff8a00;color:#fff;border:none;height:32px;width:116px;line-height:32px;}
+.videoBox{position:absolute;/*top:100px;*/right:82px;width:576px;height:320px;}
+.video video{width:100%;}
+
+.box02 .slideBox_s img.dbs {position:absolute;z-index: 20; width:632px;float:left;height:469px;margin-top:10px;margin-left:10px;}
+.box02 .slideBox_s .bdss{width:310px;float:right;margin-right:15px;margin-top:45px;}
+
+.box02 .slideBox_s .bdss h2{font-size:32px;font-weight:normal;color:#353535;border-bottom:2px solid #353535;}
+.box02 .slideBox_s .bdss h6{font-size:24px;font-weight:normal;color:#353535;}
+.box02 .slideBox_s .bdss p{font-size:14px;font-weight:normal;color:#353535;margin-top:25px;}
+.box02 .slideBox_s .bdss p span{color:#017bde;cursor: pointer}
+.box02 .slideBox_s h3{border:10px solid #7fb0e2;position:absolute;}
+.box02 .slideBox_s img.dbss{ width:426px; height:371px;position:absolute;top:66px;right:36px; display:none; }
+
+.slideBox_s{/*background:url(../images/bj.jpg) no-repeat;*/ width:1000px;/* background: #fff;*/height:495px;margin:0 auto;margin-top:88px; overflow:hidden; position:relative;  }
+/*.bds{width:1000px;overflow: hidden;background: #fff;height:496px;margin:0 auto;margin-top:115px;position: relative;}*/
+
+.slideBox_s .prev,
+.slideBox_s .next{filter:alpha(opacity=50);opacity:0.5; width:40px;height:76px;display: block;background: #000}
+.slideBox_s .prev{position: absolute;top:195px;left:0px;}
+.slideBox_s .next{position: absolute;top:195px;right:0px;}
+.slideBox_s .prev:hover,
+.slideBox_s .next:hover{ filter:alpha(opacity=20);opacity:0.2;  }
+.slideBox_s .prev img,
+.slideBox_s.next img{}
+
+.slideBoxss,.slideBoxsss{position: relative;height:420px;}
+.slideBox .prev,
+.slideBox .next{filter:alpha(opacity=80);opacity:0.8; width:40px;height:90px;display: block;background: #000}
+.slideBox .prev{position: absolute;top:171px;left:0px;}
+.slideBox .next{position: absolute;top:171px;right:0px;}
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=50);opacity:0.5;  }
+.slideBox .bd img{height:433px;}
+.slideBox .prev img,
+.slideBox .next img{margin-top:9px;margin-left:6px;}
+
+.cars{width:524px;height:265px;position:absolute;bottom:-34px;right:32px;}

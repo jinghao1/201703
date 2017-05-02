@@ -203,9 +203,10 @@ $(document).ready(function(){
         var dealer_name = province+","+city+","+dealer;
         //
         var fromwh = $("input[name='fromwh']").val();
+        var fself = $("input[name='fself']").val();
        // console.log(fromwh);
         var encrystr = $("input[name='encrystr']").val();
-        $.getJSON(ymurl+"/medias/public/index.php/port/Bwuserbx7/Comreg", {buycartime:buycartime, username:name,thesex:sex,numberphone:phone,dealer:dealer_name,model:'66',key:encrystr,fromwh:fromwh,pjid:'36'}, function(json){ 
+        $.getJSON(ymurl+"/medias/public/index.php/port/Bwuserbx7/Comreg", {buycartime:buycartime, username:name,thesex:sex,numberphone:phone,dealer:dealer_name,model:'66',key:encrystr,fromwh:fromwh,pjid:'36',fself:fself}, function(json){ 
             //console.log(json);
             if(jQuery.type(json)=="string"){
                 var json = eval('('+json+')'); //字符串转为json格式
@@ -220,6 +221,7 @@ $(document).ready(function(){
                 var cityname = $("select[name='cityId']").find("option:selected").text(); //获取城市名称
                 var dealername =  $("select[name='dealer']").find("option:selected").text(); //获取经销商名称
                 var carname = 'BX7'; //车型名称 
+             
                 $.ajax({
                     type:"POST",
                     url:ymurl+"/201704/borgwardbx7/bw5act.php",
@@ -238,7 +240,7 @@ $(document).ready(function(){
         })
      
     })       
-})
+
 //微信分享
     
     var url = ymurl+"/weixin/jssdk/wx_token.php";
@@ -361,14 +363,18 @@ $(document).ready(function(){
             });
             
     },'json')
+});
    //百度统计
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "https://hm.baidu.com/hm.js?f7837cdb3a52632e3ab0c97029d9c19d";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
+ 
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3205f4353d0ddc5ec731c8d865953e89";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+ 
+
 
 	
 function getAppShareInfo(platform){
