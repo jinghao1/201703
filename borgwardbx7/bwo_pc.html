@@ -6,6 +6,7 @@
 <meta name="format-detection" content="telephone=no"/>
 <link href="pc/css/bwoStys.css" rel="stylesheet" type="text/css"/>
 <link href="pc/css/base.css" rel="stylesheet" type="text/css"/>
+
 <link href="pc/css/summarize.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="https://player.youku.com/jsapi"></script>
 <script type="text/javascript" src="pc/js/jquery-1.10.2.min.js"></script>
@@ -171,19 +172,38 @@ $(document).ready(function(){
     if(window.location.href.indexOf("?querytype")==-1){
         url=window.location.href +"?querytype=1";
     }
-    $.ajax({
+    //$.ajax({
+    //    type: "get",
+    //    url: "https://i.qichedaquan.com/info/header?backurl="+url,
+    //    dataType: 'jsonp',
+    //    jsonp:'callback',
+    //    callback:"getHeadCallBack",
+    //    timeout: 5000,
+    //    success: function (result) {
+    //        $("#headerid").html(result);
+    //       // $('body').append('<script src="https://static.qcdqcdn.com/js/index.js"><\/script>')
+    //        $('body').append('<script src="./pc/js/idhead.js"><\/script>')
+    //    } 
+    //}); 
+    
+//edit by song
+ $.ajax({
         type: "get",
-        url: "http://i.qichedaquan.com/info/header?backurl="+url,
+        url: "/medias/public/index.php/port/Hkinfo/cgheadhttps" ,
+        data:{bkurl:url},
         dataType: 'jsonp',
         jsonp:'callback',
         callback:"getHeadCallBack",
         timeout: 5000,
         success: function (result) {
-            $("#headerid").html(result);
-            $('body').append('<script src="http://static.qcdqcdn.com/js/index.js"><\/script>')
+	        //console.log(result);
+            $("#headerid").html(result); 
+            $('body').append('<script src="./pc/js/idhead.js"><\/script>')
+            $('body').append('<link href="pc/css/idModule.css" rel="stylesheet" type="text/css"/>')
         } 
     }); 
-//edit by song
+
+
 	//购买时间
 	 
     var ymurl = "https://xy.qichedaquan.com";  
